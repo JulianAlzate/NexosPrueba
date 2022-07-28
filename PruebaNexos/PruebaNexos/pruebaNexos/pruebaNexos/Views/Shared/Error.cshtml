@@ -1,0 +1,8 @@
+﻿@using Newtonsoft.Json;
+@if (TempData["UserMessage"] != null)
+{
+<br /> var message = JsonConvert.DeserializeObject<pruebaNexos.Models.MensajeUsuario>(TempData["UserMessage"].ToString());
+<div class="mt-5 alert @message.NombreClaseCss" role="alert">
+    <h4>@message.Titulo</h4>
+    <p style="white-space:pre-wrap">@message.Mensaje</p>
+</div>}

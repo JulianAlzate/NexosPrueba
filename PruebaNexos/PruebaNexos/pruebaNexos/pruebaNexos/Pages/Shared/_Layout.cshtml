@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - pruebaNexos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--#region Datatable  -->
+    <link href="~/lib/DataTables/DataTables-1.10.24/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    <link href="~/lib/DataTables/Buttons-1.7.0/css/buttons.bootstrap4.css" rel="stylesheet" />
+    <link href="~/lib/DataTables/Buttons-1.7.0/css/buttons.dataTables.css" rel="stylesheet" />
+    <!--#endregion Datatable-->
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand"  asp-controller="Libro" asp-action="Index" >pruebaNexos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Libro" asp-action="Create" >Nuevo Libro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Autor" asp-action="Create" >Nuevo Autor</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @Html.Partial("Error")
+            @* <partial name="Error" />*@
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - pruebaNexos - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--#region Datatable  -->
+    <script src="~/lib/DataTables/DataTables-1.10.24/js/jquery.dataTables.js"></script>
+    <script src="~/lib/DataTables/DataTables-1.10.24/js/dataTables.bootstrap4.js"></script>
+    <script src="~/lib/DataTables/FixedHeader-3.1.8/js/dataTables.fixedHeader.js"></script>
+    <script src="~/lib/DataTables/FixedColumns-3.3.2/js/dataTables.fixedColumns.js"></script>
+    <script src="~/lib/DataTables/Buttons-1.7.0/js/dataTables.buttons.js"></script>
+    <script src="~/lib/DataTables/Buttons-1.7.0/js/buttons.html5.js"></script>
+    <script src="~/lib/DataTables/Buttons-1.7.0/js/buttons.print.js"></script>
+    <!--#endregion Datatable-->
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

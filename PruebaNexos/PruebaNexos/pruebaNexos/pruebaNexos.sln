@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pruebaNexos", "pruebaNexos\pruebaNexos.csproj", "{B6FE709D-D4F2-4D0D-9726-4E48C1240BD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A891F2A8-3E20-49F6-A770-33550A94163D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{9F39B45D-48A9-477D-8537-15F17040FDA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6FE709D-D4F2-4D0D-9726-4E48C1240BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FE709D-D4F2-4D0D-9726-4E48C1240BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FE709D-D4F2-4D0D-9726-4E48C1240BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FE709D-D4F2-4D0D-9726-4E48C1240BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A891F2A8-3E20-49F6-A770-33550A94163D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A891F2A8-3E20-49F6-A770-33550A94163D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A891F2A8-3E20-49F6-A770-33550A94163D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A891F2A8-3E20-49F6-A770-33550A94163D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F39B45D-48A9-477D-8537-15F17040FDA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F39B45D-48A9-477D-8537-15F17040FDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F39B45D-48A9-477D-8537-15F17040FDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F39B45D-48A9-477D-8537-15F17040FDA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E35D7FEA-51E0-4C69-976A-6203BE9F5BFC}
+	EndGlobalSection
+EndGlobal
